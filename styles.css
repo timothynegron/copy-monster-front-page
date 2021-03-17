@@ -1,0 +1,715 @@
+/* ------------------------------------------------------------------------- */
+/* ------------------------------ ID SELECTORS ----------------------------- */
+/* ------------------------------------------------------------------------- */
+
+h1 {
+    /* color: #6E46AE; */
+  
+    font-family: 'Teko', sans-serif;
+   
+  }
+  
+  h2 {
+    font-family: 'Teko', sans-serif;
+     font-size: 30pt;
+  }
+  
+  button {
+    margin: 5px;
+  
+    background-color: #543386;
+    border-style: none;
+    border-radius: 36px;
+    color:white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 30px;
+    /* margin: 0px; */
+  }
+  
+  input {
+    border-color: #6E46AE;
+    border-style: solid;
+  
+    height: 43px;
+    width: 250px;
+  }
+  
+  
+  /* ------------------------------------------------------------------------- */
+  /* ----------------------------- TAG SELECTORS ----------------------------- */
+  /* ------------------------------------------------------------------------- */
+  
+  #app {
+    width: 100%;
+    margin-left: -9px;
+    background-color: black;
+    /* height: 100%; */
+  }
+  
+  /* -------------------------------------------- */
+  /* ------------------ Header ------------------ */
+  /* -------------------------------------------- */
+  
+  #header {
+    /* Size of Div */
+    height: 12vh;
+    width: 100%;
+  
+    /* Sticky Header */
+    position: fixed;
+    top: 0;
+  
+    /* Aesthetic */
+    background-color: lightblue;
+  
+     /* Flex */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #header-top-container {
+    /* Size of Div */
+    height: 8vh;
+  
+    /* Aesthetic */
+    background-color: #FFFFFF;
+  
+    /* Flex */
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #header-bottom-container {
+    /* Size of Div */
+    height: 4vh;  
+  
+    /* Aesthetic */
+    background-color: #F5F5F5;
+  
+    /* Flex */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    /* align-content: space-between; */
+  }
+  
+  /* -------------------------------------------- */
+  /* ---------------- Parent Grid --------------- */
+  /* -------------------------------------------- */
+  
+  #parent-grid {
+    /* Design */
+    margin-top: 12vh;
+  
+    /* Size of Div */
+    /* height: 350vh; */
+    width: 100%;
+  
+    /* Grid */
+    display: grid;
+    grid-template-rows: 13% 18% 18% 17% 12% 12% 10% 12%;
+    grid-template-areas:
+    "row-1"
+    "row-2"
+    "row-3"
+    "row-4"
+    "row-5"
+    "row-6"
+    "row-7"
+    "row-8"
+  }
+  
+  /* -------------------------------------------- */
+  /* ---------------- Row 1 --------------------- */
+  /* -------------------------------------------- */
+  
+  /* vh = 36 */
+  
+  #row-1 {
+    background-color: #FFFFFF;
+  
+    /* height: 33vh; */
+  
+    /* If use justify-self, the background app color will show, won't be able to color rows properly */
+    /* justify-self: center; */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #row-1-content-div {
+    width: 1200px;
+    height: 350px;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #row-1-content-div-left {
+    /* height: 50px; */
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #dont {
+    margin-top: 60px;
+  }
+  
+  #find {
+    margin-top: -4vh;
+  }
+  
+  #jobs {
+    margin-top: -25px;
+  }
+  
+  #jobs-unique {
+    color: black;
+    border-bottom: 2px solid #00AFF0;
+    padding-bottom: 5px;
+  }
+  
+  #search {
+    /* margin-top: 12px; */
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+  }
+  
+  #check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2vh;
+  }
+  
+  /* -------------------------------------------- */
+  /* ---------------- Row 2 --------------------- */
+  /* -------------------------------------------- */
+  
+  #row-2 {
+    background-color: #F5F5F5;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #row-2-content-div {
+     width: 1300px;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #row-2-content-div-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #row-2-content-div-right {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 100px; */
+    /* align-items: center; */
+  
+    margin-right: 250px;
+  }
+  
+  #row-3-text {
+    margin-top: -1vh;
+  }
+  
+  #phar-text {
+    margin-top: 20px;
+  }
+  
+  #emp {
+    grid-area: emp;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+  }
+  
+  #mainvid {
+    grid-area: mainvid;
+  }
+  
+  #vid-text {
+    margin-top: 5px;
+  }
+  
+  #pha {
+    grid-area: pha;
+    margin-top: -5px;
+  }
+  
+  #intr {
+    grid-area: intr;
+    width: 500px;
+    margin-top: 35px;
+  }
+  
+  #see {
+  }
+  
+  #more {
+    margin-left: 5px;
+  }
+  
+  #vids {
+    grid-area: vids;
+    
+    display: flex;
+  }
+  
+  /* -------------------------------------------- */
+  /* ---------------- Row 3 --------------------- */
+  /* -------------------------------------------- */
+  
+  #row-3 {
+    background-color: #F8FCFF;
+  
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #row-3-content-div {
+    display: Flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  #title-tools {
+    /* margin-top: 2px; */
+  
+    display: flex;
+    justify-content: center;
+  
+    font-family: 'Teko', sans-serif;
+    /* align-items: center; */
+  }
+  
+  #cards {
+    display: flex;
+  }
+  
+  /* -------------------------------------------- */
+  /* ---------------- Row 4 --------------------- */
+  /* -------------------------------------------- */
+  
+  #row-4 {
+    background-color: #543386;
+  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  #row-4-content-div {
+    display: flex;
+  }
+  
+  #get-the-monster-div {
+    width: 500px;
+  
+    
+  }
+  
+  #get {
+    grid-area: get;
+    margin-top: 6vh;
+    margin-bottom: 0vh;
+  
+    color: white;
+  }
+  
+  #job {
+  
+    margin-top: 0vh;
+    color: white;
+  }
+  
+  #mil {
+    /* grid-area: mil; */
+    margin-top: -2vh;
+    color: white;
+    font-size: 14pt;
+  }
+  
+  #swipe {
+    /* grid-area: swipe; */
+    margin-top: -18px;
+    color: white;
+    font-size: 14pt;
+  }
+  
+  #stores {
+    /* grid-area: stores; */
+    margin-top: 3vh;
+  }
+  
+  #num {
+    /* grid-area: num; */
+  
+    margin-top: 32px;
+    height: 50px;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  #sms {
+    /* grid-area: sms; */
+     color: white;
+     font-size: 10pt;
+  
+     margin-top: 2px;
+  }
+  
+  #text-me-a-link {
+    border:1px solid white;
+    border-radius: 3px;
+    color:white;
+    font-size: 20px;
+    padding:5px;
+    text-align: center;
+    width: 170px;
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+    height: 24px;
+  
+    text-decoration: none;
+  }
+  
+  #text-me-a-link:hover {
+    text-decoration: underline;
+  }
+  
+  #mobile {
+    margin-top: 4vh;
+    margin-left: 2px;
+  }
+  
+  /* -------------------------------------------- */
+  /* ---------------- Row 5 --------------------- */
+  /* -------------------------------------------- */
+  
+  #row-5 {
+    background-color: #FFFFFF;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    border-bottom: solid;
+    border-bottom-color: lightgrey;
+  }
+  
+  #row-5-content-div {
+    
+  }
+  
+  #logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* -------------------------------------------- */
+  /* ---------------- Row 6 --------------------- */
+  /* -------------------------------------------- */
+  
+  #row-6 {
+    background-color: #FFFFFF;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #row-6-content-div {
+    display: flex;
+    flex-direction: column;
+   
+    width: 1000px;
+  }
+  
+  #row-6-header {
+    margin-left: 48px;
+  }
+  
+  #job-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #job-categories {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #job-titles {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #job-locations {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #company-jobs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* -------------------------------------------- */
+  /* ---------------- Row 7 --------------------- */
+  /* -------------------------------------------- */
+  
+  #row-7 {
+    background-color: #F5F5F5;
+  
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* align-content: space-around; */
+  }
+  
+  #row-7-content-div {
+    margin-top: 5px;
+  }
+  
+  #monster-logo {
+    margin-top: 25px;
+  }
+  
+  #more-info-list {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    width: 1000px;
+  }
+  
+  #job-seekers {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #for-employers {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #about-us {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #helpful-resources {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* -------------------------------------------- */
+  /* ---------------- Row 8 --------------------- */
+  /* -------------------------------------------- */
+  
+  #row-8 {
+    background-color: #F5F5F5;
+    /* background-color: blue; */
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #row-8-content-div {
+    
+  }
+  
+  #social-media {
+    width: 300px;
+  
+  }
+  
+  #looking {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ------------------------------------------------------------------------- */
+  /* ---------------------------- CLASS SELECTORS ---------------------------- */
+  /* ------------------------------------------------------------------------- */
+  
+  .all-links {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .all-links:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .header-links-bottom-container:hover {
+    color: #8564BA;
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+  
+  .anchor-style-1 {
+    margin: 15px;
+  }
+  
+  .anchor-style-2 {
+    margin: 2px;
+    color: #656565;
+  }
+  
+  .anchor-style-3 {
+    margin: 3px;
+    color: #656565;
+  }
+  
+  .anchor-style-4 {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .anchor-style-5 {
+    color: #00AFF0;
+  }
+  
+  .anchor-style-6 {
+    color: #9B9B9B;
+    font-size: 9pt;
+    text-decoration: none;
+  }
+  
+  .anchor-style-7 {
+    font-size: 10pt;
+  }
+  
+  .row-1-child-row-4-links {
+    margin: 5px;
+    font-size: 12pt;
+  }
+  
+  .row-1-child-row-4-links:hover {
+    color: #00AFF0;
+    text-decoration: none;
+  }
+  
+  .cards-class {
+    width: 370px;
+    height: 370px;
+    background-color: #FFFFFF;
+    margin: 15px;
+     -moz-box-shadow: 0px 0px 4px lightgrey;
+    -webkit-box-shadow: 0px 0px 4px lightgrey;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     outline-width: 0;
+     border-color: #E1E1E1;
+  
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   
+  }
+  
+  .all-font {
+     font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-links {
+    
+  }
+  
+  .row-6-margin {
+    margin-left: 40px;
+  }
+  
+  .vids-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     margin-left: 5px;
+  }
+  
+  .social-margin {
+    margin-left: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .font-style-2 {
+    color: #007FAD;
+    font-size: 18pt;
+  }
+  
+  .font-style-3 {
+    font-size: 10pt;
+    color: #9B9B9B;
+  }
+  
+  .font-style-4 {
+    font-weight: lighter;
+  }
+  
+  .font-style-5 {
+    font-size: 12pt;
+  }
+  
+  .font-style-6 {
+    font-size: 10pt;
+    font-weight: lighter;
+  }
+  
+  .button-style-2 {
+    background-color: #007D91;
+    height: 40px;
+    padding-top: 8px;
+  }
+  
+  .p-width {
+    width: 300px;
+    color: #9B9B9B;
+    margin-top: -10px;
+    text-align: center;
+  }
+  
+  .font-color-1 {
+    color: #3D2462
+  }
+  
+  .button-style-3 {
+    width: 202px;
+    font-size: 10pt;
+    font-weight: lighter;
+  }
+  
+  .margin-style-1 {
+    margin: 5px;
+  }
+  
+  .margin-style-2 {
+    margin-bottom: -2px;
+    margin-left: 43px;
+  }
